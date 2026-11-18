@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -8,6 +8,37 @@ import { createPart5Timeline } from './generated/part5-timeline';
 import './generated/part5.css';
 import './styles.css';
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
+
+function OriginalNav() {
+ const [visible,setVisible]=useState(true);
+ const [sound,setSound]=useState(false);
+ const audio=useRef(null);
+ useEffect(()=>{
+  let previous=scrollY;
+  const onScroll=()=>{const next=scrollY;if(Math.abs(next-previous)>3){setVisible(next<previous||next<80);previous=next;}};
+  addEventListener('scroll',onScroll,{passive:true});
+  return()=>removeEventListener('scroll',onScroll);
+ },[]);
+ const toggleSound=async()=>{
+  if(sound){audio.current.pause();setSound(false);return;}
+  try{await audio.current.play();setSound(true);}catch{setSound(false);}
+ };
+ const icon=(name)=>`/assets/nav/${name}`;
+ const items=[
+  ['观知','/Marvels','nav-guanzhi-02.png','nav-guanzhi-on-02.png'],
+  ['论道','/Topics','nav-lundao-02.png','nav-lundao-on-02.png'],
+  ['讲解','/Guides','nav-jiangjie-02.png','nav-jiangjie-on-02.png']
+ ];
+ return <nav className={`original-nav${visible?'':' hidden'}`} aria-label="青铜文明导航">
+  <a className="original-nav-logo" href="https://tv.cctv.com/bronze/index.html#/" aria-label="青铜文明首页"><img src={icon('nav-logo.avif')} alt="青铜文明" /></a>
+  <div className="original-nav-right">
+   <ul className="original-nav-links">{items.map(([label,path,normal,hover])=><li key={path}><a href={`https://tv.cctv.com/bronze/index.html#${path}`} target="_blank" rel="noopener noreferrer" aria-label={label}><img src={icon(normal)} alt="" /><img className="hover" src={icon(hover)} alt="" /></a></li>)}</ul>
+   <div className="original-nav-languages" aria-label="语言"><span className="active" aria-current="true">中</span><a href="https://tv.cctv.com/bronze/index.html#/Rites" lang="en" aria-label="Open original site for English language">EN</a></div>
+   <button className="original-nav-sound" type="button" aria-label={sound?'关闭背景音乐':'开启背景音乐'} aria-pressed={sound} onClick={toggleSound}><img src={icon(sound?'nav-sound.avif':'nav-muted.avif')} alt="" /></button>
+  </div>
+  <audio ref={audio} src={icon('rites_bg.mp3')} loop preload="none" onEnded={()=>setSound(false)} onError={()=>setSound(false)} />
+ </nav>;
+}
 
 function Part5() {
  const root=useRef(null);
@@ -67,6 +98,7 @@ function Part5() {
  return <main ref={root} className="part5-scroll" aria-label="礼乐之邦：编钟与乐悬制度">
   <div className="smooth-wrapper"><div className="smooth-content" /></div>
   <div className="part5-viewport" dangerouslySetInnerHTML={{__html:originalMarkup}} />
+  <OriginalNav />
   <p className="media-error" role="status">编钟影像加载失败，请刷新页面重试。</p>
  </main>;
 }

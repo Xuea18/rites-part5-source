@@ -7,3 +7,22 @@ body{overflow-x:hidden;}
 .media-error{display:none;position:fixed;bottom:12px;left:20px;color:white;font:16px sans-serif;}
 [data-media-error=true] .media-error{display:block;}
 @media(prefers-reduced-motion:reduce){.rites_part5 *{animation:none!important;transition:none!important;}}
+
+.original-nav{width:100%;height:.92rem;position:fixed;left:0;top:0;background:#000000c4;z-index:9998;transition:transform .3s;padding-left:3.09rem;padding-right:3.04rem;display:flex;align-items:center;box-sizing:border-box}
+.original-nav.hidden{transform:translateY(-100%)}
+.original-nav-logo img{display:block;width:1.73rem;height:.83rem;filter:drop-shadow(rgba(255,144,0,.18) 0 0 .18rem)}
+.original-nav-right{margin-left:auto;height:100%;display:flex;align-items:center}
+.original-nav-links{display:flex;list-style:none;padding:0;margin:0}
+.original-nav-links li{padding:0 .24rem;border-right:.01rem dotted #bebebe;height:.42rem}
+.original-nav-links a{display:block;position:relative;height:.42rem}
+.original-nav-links img{display:block;width:auto;height:.42rem;opacity:.9}
+.original-nav-links img.hover{position:absolute;left:0;top:0;opacity:0}
+.original-nav-links a:hover img.hover,.original-nav-links a:focus-visible img.hover{opacity:1}
+.original-nav-languages{display:flex;align-items:center;padding:0 .3rem;gap:.15rem;font-family:'Source Han Serif SC Bold',serif}
+.original-nav-languages>*{display:flex;width:.52rem;height:.52rem;justify-content:center;align-items:center;border-radius:50%;font-size:.29rem;color:#fff;text-decoration:none;box-sizing:border-box}
+.original-nav-languages .active{background:#a6793e}
+.original-nav-languages a{opacity:.45}
+.original-nav-sound{display:flex;align-items:center;justify-content:flex-end;width:.65rem;height:.42rem;padding:0 0 0 .4rem;border:0;border-left:.01rem dotted #bebebe;background:none;cursor:pointer}
+.original-nav-sound img{display:block;width:.24rem;height:.24rem}
+@media(max-width:800px){.original-nav{padding:0 20px;height:54px}.original-nav-logo img{width:100px;height:auto}.original-nav-links{display:none}.original-nav-languages{margin-left:auto}.original-nav-languages>*{width:30px;height:30px;font-size:16px}.original-nav-sound{width:40px;height:26px;padding-left:12px}.original-nav-sound img{width:18px;height:18px}}
+@media(prefers-reduced-motion:reduce){.original-nav{transition:none}}
