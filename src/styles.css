@@ -1,0 +1,9 @@
+html,body,#root{margin:0;background:#000;min-height:100%;}
+body{overflow-x:hidden;}
+.part5-scroll{position:relative;}
+.part5-viewport{position:fixed;inset:0;overflow:hidden;background:#000;}
+.part5-viewport .rites_part5{left:0;top:0;}
+[role=button]:focus-visible{outline:2px solid #efc56b;outline-offset:5px;}
+.media-error{display:none;position:fixed;bottom:12px;left:20px;color:white;font:16px sans-serif;}
+[data-media-error=true] .media-error{display:block;}
+@media(prefers-reduced-motion:reduce){.rites_part5 *{animation:none!important;transition:none!important;}}
