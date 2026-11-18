@@ -1,0 +1,173 @@
+{
+  "url": "https://xuea18.github.io/b/",
+  "errors": [],
+  "bells": [
+    {
+      "id": "bell-1_left-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_left-2",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_left-3",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_left-4",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_left-5",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_left-6",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_right-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_right-2",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_right-3",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_right-4",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_right-5",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-1_right-6",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-2_left-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-2_left-2",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-2_left-3",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-2_right-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-2_right-2",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-2_right-3",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-3_left-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-3_left-2",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-3_right-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-3_right-2",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-4-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-5-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-6-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-7-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    },
+    {
+      "id": "bell-8-1",
+      "click": true,
+      "audio": true,
+      "strum": true
+    }
+  ],
+  "autoStops": true,
+  "lensLongpress": true,
+  "holdStops": true,
+  "export": true,
+  "storage": true
+}

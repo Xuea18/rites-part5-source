@@ -1,0 +1,1165 @@
+{
+  "base": "https://xuea18.github.io/b/",
+  "errors": [],
+  "bells": [
+    {
+      "id": "bell-1_left-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_left-2",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_left-3",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_left-4",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_left-5",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_left-6",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_right-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_right-2",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_right-3",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_right-4",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_right-5",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-1_right-6",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-2_left-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-2_left-2",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-2_left-3",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-2_right-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-2_right-2",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-2_right-3",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-3_left-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-3_left-2",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-3_right-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-3_right-2",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-4-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-5-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-6-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-7-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-8-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    }
+  ],
+  "checks": {
+    "lensOn": true,
+    "lensOff": true,
+    "lensStable": true,
+    "noErrors": true,
+    "all27": true
+  },
+  "available": {
+    "bell-1_left-1": {
+      "x": 65,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_left-2": {
+      "x": 146.60000000000002,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_left-3": {
+      "x": 227.6,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_left-4": {
+      "x": 373.40000000000003,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_left-5": {
+      "x": 454.4,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_left-6": {
+      "x": 535.4,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_right-1": {
+      "x": 893,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_right-2": {
+      "x": 974.6,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_right-3": {
+      "x": 1055.6,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_right-4": {
+      "x": 1201.4,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_right-5": {
+      "x": 1282.4,
+      "y": 70,
+      "t": 2
+    },
+    "bell-1_right-6": {
+      "x": 1363.4,
+      "y": 70,
+      "t": 2
+    },
+    "bell-2_left-1": {
+      "x": 185,
+      "y": 140,
+      "t": 2
+    },
+    "bell-2_left-2": {
+      "x": 300.08187499999997,
+      "y": 140,
+      "t": 2
+    },
+    "bell-2_left-3": {
+      "x": 412.36046875,
+      "y": 140,
+      "t": 2
+    },
+    "bell-2_right-1": {
+      "x": 1017.328125,
+      "y": 140,
+      "t": 2
+    },
+    "bell-2_right-2": {
+      "x": 1132.41,
+      "y": 140,
+      "t": 2
+    },
+    "bell-2_right-3": {
+      "x": 1244.68859375,
+      "y": 140,
+      "t": 2
+    },
+    "bell-3_left-1": {
+      "x": 101,
+      "y": 185,
+      "t": 2
+    },
+    "bell-3_left-2": {
+      "x": 483.94171875,
+      "y": 185,
+      "t": 2
+    },
+    "bell-3_right-1": {
+      "x": 936.203125,
+      "y": 185,
+      "t": 2
+    },
+    "bell-3_right-2": {
+      "x": 1319.14484375,
+      "y": 185,
+      "t": 2
+    },
+    "bell-4-1": {
+      "x": 707,
+      "y": 83.484375,
+      "t": 2
+    },
+    "bell-5-1": {
+      "x": 208.7578125,
+      "y": 70,
+      "t": 4
+    },
+    "bell-6-1": {
+      "x": 620.6015625,
+      "y": 70,
+      "t": 4
+    },
+    "bell-7-1": {
+      "x": 1032.4453125,
+      "y": 70,
+      "t": 4
+    },
+    "bell-8-1": {
+      "x": 926.84375,
+      "y": 70,
+      "t": 6
+    }
+  },
+  "events": {
+    "id": "dbd0ae10-4da3-401d-91fb-9e9388c58dfd",
+    "group": "B",
+    "startedAt": "2026-11-18T10:10:06.972Z",
+    "endedAt": null,
+    "events": [
+      {
+        "timestamp": "2026-11-18T10:10:31.035Z",
+        "type": "quote",
+        "target": "quote-0",
+        "extra": {
+          "index": 0
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:33.341Z",
+        "type": "quote",
+        "target": "quote-1",
+        "extra": {
+          "index": 1
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:35.817Z",
+        "type": "quote",
+        "target": "quote-2",
+        "extra": {
+          "index": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:38.162Z",
+        "type": "quote",
+        "target": "quote-3",
+        "extra": {
+          "index": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:45.816Z",
+        "type": "longpress",
+        "target": "bell-1_left-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:10:46.132Z",
+        "type": "dblclick",
+        "target": "bell-1_left-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:47.049Z",
+        "type": "rotate",
+        "target": "bell-1_left-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:10:47.432Z",
+        "type": "dblclick",
+        "target": "bell-1_left-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:51.152Z",
+        "type": "longpress",
+        "target": "bell-1_left-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:10:51.555Z",
+        "type": "dblclick",
+        "target": "bell-1_left-2",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:52.411Z",
+        "type": "rotate",
+        "target": "bell-1_left-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:10:52.740Z",
+        "type": "dblclick",
+        "target": "bell-1_left-2",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:56.421Z",
+        "type": "longpress",
+        "target": "bell-1_left-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:10:56.727Z",
+        "type": "dblclick",
+        "target": "bell-1_left-3",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:10:57.645Z",
+        "type": "rotate",
+        "target": "bell-1_left-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:10:58.034Z",
+        "type": "dblclick",
+        "target": "bell-1_left-3",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:01.679Z",
+        "type": "longpress",
+        "target": "bell-1_left-4"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:02.101Z",
+        "type": "dblclick",
+        "target": "bell-1_left-4",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:02.979Z",
+        "type": "rotate",
+        "target": "bell-1_left-4"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:03.331Z",
+        "type": "dblclick",
+        "target": "bell-1_left-4",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:06.992Z",
+        "type": "longpress",
+        "target": "bell-1_left-5"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:07.331Z",
+        "type": "dblclick",
+        "target": "bell-1_left-5",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:08.319Z",
+        "type": "rotate",
+        "target": "bell-1_left-5"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:08.782Z",
+        "type": "dblclick",
+        "target": "bell-1_left-5",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:12.461Z",
+        "type": "longpress",
+        "target": "bell-1_left-6"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:12.775Z",
+        "type": "dblclick",
+        "target": "bell-1_left-6",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:13.645Z",
+        "type": "rotate",
+        "target": "bell-1_left-6"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:14.012Z",
+        "type": "dblclick",
+        "target": "bell-1_left-6",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:17.703Z",
+        "type": "longpress",
+        "target": "bell-1_right-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:18.000Z",
+        "type": "dblclick",
+        "target": "bell-1_right-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:18.850Z",
+        "type": "rotate",
+        "target": "bell-1_right-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:19.218Z",
+        "type": "dblclick",
+        "target": "bell-1_right-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:22.868Z",
+        "type": "longpress",
+        "target": "bell-1_right-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:23.241Z",
+        "type": "dblclick",
+        "target": "bell-1_right-2",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:24.089Z",
+        "type": "rotate",
+        "target": "bell-1_right-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:24.413Z",
+        "type": "dblclick",
+        "target": "bell-1_right-2",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:28.053Z",
+        "type": "longpress",
+        "target": "bell-1_right-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:28.367Z",
+        "type": "dblclick",
+        "target": "bell-1_right-3",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:29.271Z",
+        "type": "rotate",
+        "target": "bell-1_right-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:29.632Z",
+        "type": "dblclick",
+        "target": "bell-1_right-3",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:33.315Z",
+        "type": "longpress",
+        "target": "bell-1_right-4"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:33.730Z",
+        "type": "dblclick",
+        "target": "bell-1_right-4",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:34.586Z",
+        "type": "rotate",
+        "target": "bell-1_right-4"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:34.914Z",
+        "type": "dblclick",
+        "target": "bell-1_right-4",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:38.585Z",
+        "type": "longpress",
+        "target": "bell-1_right-5"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:38.908Z",
+        "type": "dblclick",
+        "target": "bell-1_right-5",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:39.821Z",
+        "type": "rotate",
+        "target": "bell-1_right-5"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:40.183Z",
+        "type": "dblclick",
+        "target": "bell-1_right-5",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:43.895Z",
+        "type": "longpress",
+        "target": "bell-1_right-6"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:44.353Z",
+        "type": "dblclick",
+        "target": "bell-1_right-6",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:45.207Z",
+        "type": "rotate",
+        "target": "bell-1_right-6"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:45.536Z",
+        "type": "dblclick",
+        "target": "bell-1_right-6",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:49.190Z",
+        "type": "longpress",
+        "target": "bell-2_left-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:49.506Z",
+        "type": "dblclick",
+        "target": "bell-2_left-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:50.408Z",
+        "type": "rotate",
+        "target": "bell-2_left-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:50.788Z",
+        "type": "dblclick",
+        "target": "bell-2_left-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:54.436Z",
+        "type": "longpress",
+        "target": "bell-2_left-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:54.838Z",
+        "type": "dblclick",
+        "target": "bell-2_left-2",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:55.690Z",
+        "type": "rotate",
+        "target": "bell-2_left-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:11:56.031Z",
+        "type": "dblclick",
+        "target": "bell-2_left-2",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:11:59.703Z",
+        "type": "longpress",
+        "target": "bell-2_left-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:00.031Z",
+        "type": "dblclick",
+        "target": "bell-2_left-3",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:00.952Z",
+        "type": "rotate",
+        "target": "bell-2_left-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:01.332Z",
+        "type": "dblclick",
+        "target": "bell-2_left-3",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:05.052Z",
+        "type": "longpress",
+        "target": "bell-2_right-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:05.470Z",
+        "type": "dblclick",
+        "target": "bell-2_right-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:06.329Z",
+        "type": "rotate",
+        "target": "bell-2_right-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:06.663Z",
+        "type": "dblclick",
+        "target": "bell-2_right-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:10.324Z",
+        "type": "longpress",
+        "target": "bell-2_right-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:10.682Z",
+        "type": "dblclick",
+        "target": "bell-2_right-2",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:11.639Z",
+        "type": "rotate",
+        "target": "bell-2_right-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:12.135Z",
+        "type": "dblclick",
+        "target": "bell-2_right-2",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:15.828Z",
+        "type": "longpress",
+        "target": "bell-2_right-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:16.150Z",
+        "type": "dblclick",
+        "target": "bell-2_right-3",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:17.110Z",
+        "type": "rotate",
+        "target": "bell-2_right-3"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:17.516Z",
+        "type": "dblclick",
+        "target": "bell-2_right-3",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:21.182Z",
+        "type": "longpress",
+        "target": "bell-3_left-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:21.589Z",
+        "type": "dblclick",
+        "target": "bell-3_left-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:22.440Z",
+        "type": "rotate",
+        "target": "bell-3_left-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:22.793Z",
+        "type": "dblclick",
+        "target": "bell-3_left-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:26.458Z",
+        "type": "longpress",
+        "target": "bell-3_left-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:26.839Z",
+        "type": "dblclick",
+        "target": "bell-3_left-2",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:27.789Z",
+        "type": "rotate",
+        "target": "bell-3_left-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:28.269Z",
+        "type": "dblclick",
+        "target": "bell-3_left-2",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:31.937Z",
+        "type": "longpress",
+        "target": "bell-3_right-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:32.285Z",
+        "type": "dblclick",
+        "target": "bell-3_right-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:33.234Z",
+        "type": "rotate",
+        "target": "bell-3_right-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:33.621Z",
+        "type": "dblclick",
+        "target": "bell-3_right-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:37.272Z",
+        "type": "longpress",
+        "target": "bell-3_right-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:37.659Z",
+        "type": "dblclick",
+        "target": "bell-3_right-2",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:38.513Z",
+        "type": "rotate",
+        "target": "bell-3_right-2"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:38.851Z",
+        "type": "dblclick",
+        "target": "bell-3_right-2",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:42.509Z",
+        "type": "longpress",
+        "target": "bell-4-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:42.819Z",
+        "type": "dblclick",
+        "target": "bell-4-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:43.737Z",
+        "type": "rotate",
+        "target": "bell-4-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:44.129Z",
+        "type": "dblclick",
+        "target": "bell-4-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:47.808Z",
+        "type": "longpress",
+        "target": "bell-5-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:48.209Z",
+        "type": "dblclick",
+        "target": "bell-5-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:49.072Z",
+        "type": "rotate",
+        "target": "bell-5-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:49.408Z",
+        "type": "dblclick",
+        "target": "bell-5-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:53.073Z",
+        "type": "longpress",
+        "target": "bell-6-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:53.376Z",
+        "type": "dblclick",
+        "target": "bell-6-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:54.304Z",
+        "type": "rotate",
+        "target": "bell-6-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:54.675Z",
+        "type": "dblclick",
+        "target": "bell-6-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:58.340Z",
+        "type": "longpress",
+        "target": "bell-7-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:58.762Z",
+        "type": "dblclick",
+        "target": "bell-7-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:12:59.619Z",
+        "type": "rotate",
+        "target": "bell-7-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:12:59.932Z",
+        "type": "dblclick",
+        "target": "bell-7-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:13:03.604Z",
+        "type": "longpress",
+        "target": "bell-8-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:13:03.937Z",
+        "type": "dblclick",
+        "target": "bell-8-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:13:04.883Z",
+        "type": "rotate",
+        "target": "bell-8-1"
+      },
+      {
+        "timestamp": "2026-11-18T10:13:05.303Z",
+        "type": "dblclick",
+        "target": "bell-8-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T10:13:08.261Z",
+        "type": "magnifier_on",
+        "target": "scene"
+      },
+      {
+        "timestamp": "2026-11-18T10:13:09.410Z",
+        "type": "magnifier_off",
+        "target": "scene"
+      },
+      {
+        "timestamp": "2026-11-18T10:13:09.427Z",
+        "type": "magnifier_on",
+        "target": "scene"
+      },
+      {
+        "timestamp": "2026-11-18T10:13:09.437Z",
+        "type": "magnifier_off",
+        "target": "scene"
+      }
+    ],
+    "quotesSeen": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "totalQuotes": 8,
+    "visibleDurationMs": 182464.6000000015,
+    "durationMs": 182465,
+    "quoteCompletion": 0.5
+  }
+}

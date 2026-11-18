@@ -1,0 +1,9 @@
+{
+  "viewport": "1440x900",
+  "time": 8,
+  "exclusion": "top 100px navigation and right 8px scrollbar",
+  "threshold": 16,
+  "changedPixels": 1,
+  "comparisonPixels": 1145600,
+  "changedPercent": 0.00008729050279329609
+}
