@@ -7,7 +7,7 @@ const base=process.env.B_TEST_URL||'http://127.0.0.1:5175/b/';
  const context=await browser.newContext({viewport:{width:1440,height:900}}),page=await context.newPage();page.setDefaultNavigationTimeout(120000);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const results={base,errors,bells:[],checks:{}};
  try{
-  await page.goto(base,{waitUntil:'networkidle'});await page.waitForFunction(()=>window.__EXP_B?.bells.length===27);await page.evaluate(()=>document.fonts.ready);
+  await page.goto(base,{waitUntil:'networkidle'});await page.waitForFunction(()=>window.__EXP_B?.bells.length===3);await page.evaluate(()=>document.fonts.ready);
   const seek=async t=>{await page.evaluate(t=>scrollTo(0,(document.body.scrollHeight-innerHeight)*t/52.5),t);await page.waitForTimeout(2400);};
   const available={};
   for(const t of [2,4,6,8,16,24,32]){
@@ -36,7 +36,7 @@ const base=process.env.B_TEST_URL||'http://127.0.0.1:5175/b/';
   await page.mouse.click(700,700,{button:'right'});await page.mouse.click(700,700,{button:'right'});results.checks.lensStable=await page.locator('.b-lens').evaluate(e=>!e.classList.contains('visible'));
   results.events=await page.evaluate(()=>__EXP_B.log.session);
   results.checks.noErrors=errors.length===0;
-  results.checks.all27=results.bells.length===27;
+  results.checks.onlyThreeSubjects=results.bells.length===3&&results.bells.every(b=>['bell-5-1','bell-6-1','bell-7-1'].includes(b.id));
   await page.screenshot({path:'verification-scene.png'});
  }finally{fs.writeFileSync('verification.json',JSON.stringify(results,null,2));console.log(JSON.stringify({checks:results.checks,bells:results.bells,errors}));await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

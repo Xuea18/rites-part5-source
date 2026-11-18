@@ -1,10 +1,6 @@
-// B: one stable ID for every bell in the main scene; coordinates are source-image fractions.
+// B: only the three foreground subject bells are interactive. All other bells remain scenery.
 const groups=[
- ['1_left',[0,.14,.29,.56,.71,.86],[.13,.13,.13,.13,.13,.14]],
- ['1_right',[0,.14,.29,.56,.71,.86],[.13,.13,.13,.13,.13,.14]],
- ['2_left',[0,.36,.73],[.28,.28,.27]],['2_right',[0,.36,.73],[.28,.28,.27]],
- ['3_left',[0,.73],[.28,.27]],['3_right',[0,.73],[.28,.27]],
- ['4',[0],[1]],['5',[0],[1]],['6',[0],[1]],['7',[0],[1]],['8',[0],[1]]
+ ['5',[0],[1]],['6',[0],[1]],['7',[0],[1]]
 ];
 const notes=['C4','D4','E4','G4','A4'];
 export const bells=groups.flatMap(([group,xs,widths])=>xs.map((x,i)=>({

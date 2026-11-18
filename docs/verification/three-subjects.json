@@ -1,0 +1,205 @@
+{
+  "base": "http://127.0.0.1:5175/b/",
+  "errors": [],
+  "bells": [
+    {
+      "id": "bell-5-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-6-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    },
+    {
+      "id": "bell-7-1",
+      "hover": true,
+      "longpress": true,
+      "release": true,
+      "enlarged": true,
+      "rotate": true,
+      "restored": true
+    }
+  ],
+  "checks": {
+    "lensOn": true,
+    "lensOff": true,
+    "lensStable": true,
+    "noErrors": true,
+    "onlyThreeSubjects": true
+  },
+  "available": {
+    "bell-5-1": {
+      "x": 208.7578125,
+      "y": 70,
+      "t": 4
+    },
+    "bell-6-1": {
+      "x": 620.6015625,
+      "y": 70,
+      "t": 4
+    },
+    "bell-7-1": {
+      "x": 1032.4453125,
+      "y": 70,
+      "t": 4
+    }
+  },
+  "events": {
+    "id": "aa682745-f07c-4152-8df5-598cb35fe57c",
+    "group": "B",
+    "startedAt": "2026-11-18T14:53:50.003Z",
+    "endedAt": null,
+    "events": [
+      {
+        "timestamp": "2026-11-18T14:54:11.869Z",
+        "type": "quote",
+        "target": "quote-0",
+        "extra": {
+          "index": 0
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:14.119Z",
+        "type": "quote",
+        "target": "quote-1",
+        "extra": {
+          "index": 1
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:16.573Z",
+        "type": "quote",
+        "target": "quote-2",
+        "extra": {
+          "index": 2
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:18.911Z",
+        "type": "quote",
+        "target": "quote-3",
+        "extra": {
+          "index": 3
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:26.492Z",
+        "type": "longpress",
+        "target": "bell-5-1"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:26.834Z",
+        "type": "dblclick",
+        "target": "bell-5-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:27.700Z",
+        "type": "rotate",
+        "target": "bell-5-1"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:28.015Z",
+        "type": "dblclick",
+        "target": "bell-5-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:31.670Z",
+        "type": "longpress",
+        "target": "bell-6-1"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:31.995Z",
+        "type": "dblclick",
+        "target": "bell-6-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:32.841Z",
+        "type": "rotate",
+        "target": "bell-6-1"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:33.177Z",
+        "type": "dblclick",
+        "target": "bell-6-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:36.819Z",
+        "type": "longpress",
+        "target": "bell-7-1"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:37.130Z",
+        "type": "dblclick",
+        "target": "bell-7-1",
+        "extra": {
+          "action": "enlarge"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:37.983Z",
+        "type": "rotate",
+        "target": "bell-7-1"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:38.321Z",
+        "type": "dblclick",
+        "target": "bell-7-1",
+        "extra": {
+          "action": "restore"
+        }
+      },
+      {
+        "timestamp": "2026-11-18T14:54:41.292Z",
+        "type": "magnifier_on",
+        "target": "scene"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:42.247Z",
+        "type": "magnifier_off",
+        "target": "scene"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:42.260Z",
+        "type": "magnifier_on",
+        "target": "scene"
+      },
+      {
+        "timestamp": "2026-11-18T14:54:42.266Z",
+        "type": "magnifier_off",
+        "target": "scene"
+      }
+    ],
+    "quotesSeen": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "totalQuotes": 8,
+    "visibleDurationMs": 52262,
+    "durationMs": 52263,
+    "quoteCompletion": 0.5
+  }
+}

@@ -3,7 +3,7 @@ import {bells} from './bells';
 import {createAudioManager} from './audioManager';
 import {createTelemetry} from './telemetry';
 import './mouse.css';
-export const parameters={hold:600,double:280,deadzone:8,hover:55,zoomMs:400,rotationMs:8000,lens:200,magnification:2};
+export const parameters={hold:600,double:280,deadzone:8,hover:0,zoomMs:400,rotationMs:8000,lens:200,magnification:2};
 export async function installEnhancedMouse(host){
  const viewport=host.querySelector('.part5-viewport');
  const audio=createAudioManager(),log=createTelemetry(9),listeners=[];
