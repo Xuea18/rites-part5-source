@@ -7,6 +7,9 @@ import originalMarkup from './generated/part5.html?raw';
 import { createPart5Timeline } from './generated/part5-timeline';
 import './generated/part5.css';
 import './styles.css';
+// B additions are contained in experiment/*; the original timeline is reused.
+import {installEnhancedMouse} from './experiment/enhancedMouse';
+import {backgroundUrl} from './experiment/audioManager';
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
 
 function OriginalNav() {
@@ -23,7 +26,7 @@ function OriginalNav() {
   if(sound){audio.current.pause();setSound(false);return;}
   try{await audio.current.play();setSound(true);}catch{setSound(false);}
  };
- const icon=(name)=>`/assets/nav/${name}`;
+ const icon=(name)=>`${import.meta.env.BASE_URL}assets/nav/${name}`;
  const items=[
   ['观知','/Marvels','nav-guanzhi-02.png','nav-guanzhi-on-02.png'],
   ['论道','/Topics','nav-lundao-02.png','nav-lundao-on-02.png'],
@@ -36,7 +39,7 @@ function OriginalNav() {
    <div className="original-nav-languages" aria-label="语言"><span className="active" aria-current="true">中</span><a href="https://tv.cctv.com/bronze/index.html#/Rites" lang="en" aria-label="Open original site for English language">EN</a></div>
    <button className="original-nav-sound" type="button" aria-label={sound?'关闭背景音乐':'开启背景音乐'} aria-pressed={sound} onClick={toggleSound}><img src={icon(sound?'nav-sound.avif':'nav-muted.avif')} alt="" /></button>
   </div>
-  <audio ref={audio} src={icon('rites_bg.mp3')} loop preload="none" onEnded={()=>setSound(false)} onError={()=>setSound(false)} />
+  <audio ref={audio} src={backgroundUrl} loop preload="none" onEnded={()=>setSound(false)} onError={()=>setSound(false)} />
  </nav>;
 }
 
@@ -93,11 +96,12 @@ function Part5() {
   video.addEventListener('error',()=>{host.dataset.mediaError='true';},{once:true});
   frame=requestAnimationFrame(tick);
   addEventListener('resize',resize);
-  return()=>{disposed=true;cancelAnimationFrame(frame);jump?.kill();cleanups.forEach(f=>f());removeEventListener('resize',resize);smoother.kill();ctx.revert();};
+  let cleanB;installEnhancedMouse(host).then(clean=>{if(disposed)clean();else cleanB=clean;}).catch(console.error);
+  return()=>{disposed=true;cleanB?.();cancelAnimationFrame(frame);jump?.kill();cleanups.forEach(f=>f());removeEventListener('resize',resize);smoother.kill();ctx.revert();};
  },[]);
  return <main ref={root} className="part5-scroll" aria-label="礼乐之邦：编钟与乐悬制度">
   <div className="smooth-wrapper"><div className="smooth-content" /></div>
-  <div className="part5-viewport" dangerouslySetInnerHTML={{__html:originalMarkup}} />
+  <div className="part5-viewport" dangerouslySetInnerHTML={{__html:originalMarkup.replaceAll('/assets/',`${import.meta.env.BASE_URL}assets/`)}} />
   <OriginalNav />
   <p className="media-error" role="status">编钟影像加载失败，请刷新页面重试。</p>
  </main>;

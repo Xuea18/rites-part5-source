@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "provenance": "Only rites_bg.mp3 existed in the baseline. Bell sounds are newly synthesized experimental stimuli, not recordings of historical bells. Sustain reuses the same unmodified strike file in a loop. No preexisting strike/sustain/UI audio was found.",
+  "background": {
+    "file": "rites_bg.mp3",
+    "purpose": "原站礼乐之邦背景音乐",
+    "sha256": "3508b4219f007aee591caa3ad884183faed718cdf1093b57ee55ba76989fee21"
+  },
+  "tones": {
+    "C4": {
+      "file": "bell_C4.wav",
+      "frequencyHz": 261.625565,
+      "origin": "synthetic-experiment",
+      "sha256": "d68d79f8ec546c89893a293b05044649858c74a2f9d52aca85d5a5faeb63f45d"
+    },
+    "D4": {
+      "file": "bell_D4.wav",
+      "frequencyHz": 293.664768,
+      "origin": "synthetic-experiment",
+      "sha256": "761d07115c4393940ead6081f2d665dc2df1d5989977f082663dc61d2de1bff2"
+    },
+    "E4": {
+      "file": "bell_E4.wav",
+      "frequencyHz": 329.627557,
+      "origin": "synthetic-experiment",
+      "sha256": "ac372fca25ea3f072c3d496bb6baca0b4066bcc0f8562d26205214365984d8d8"
+    },
+    "G4": {
+      "file": "bell_G4.wav",
+      "frequencyHz": 391.995436,
+      "origin": "synthetic-experiment",
+      "sha256": "1d27fde0df0e736b6f29b7592c3a7ac1018b3de318a2d85970394299c8b2363b"
+    },
+    "A4": {
+      "file": "bell_A4.wav",
+      "frequencyHz": 440,
+      "origin": "synthetic-experiment",
+      "sha256": "f61b92a77013b57e112913473fa4ed885f343a2b34800f5cf4ab130f6bd502e4"
+    }
+  },
+  "bells": [
+    {
+      "id": "bell-1_left-1",
+      "label": "背景钟 1_left-1",
+      "note": "D4",
+      "strike": "bell_D4.wav",
+      "sustain": "bell_D4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_left-2",
+      "label": "背景钟 1_left-2",
+      "note": "E4",
+      "strike": "bell_E4.wav",
+      "sustain": "bell_E4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_left-3",
+      "label": "背景钟 1_left-3",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_left-4",
+      "label": "背景钟 1_left-4",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_left-5",
+      "label": "背景钟 1_left-5",
+      "note": "C4",
+      "strike": "bell_C4.wav",
+      "sustain": "bell_C4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_left-6",
+      "label": "背景钟 1_left-6",
+      "note": "D4",
+      "strike": "bell_D4.wav",
+      "sustain": "bell_D4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_right-1",
+      "label": "背景钟 1_right-1",
+      "note": "D4",
+      "strike": "bell_D4.wav",
+      "sustain": "bell_D4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_right-2",
+      "label": "背景钟 1_right-2",
+      "note": "E4",
+      "strike": "bell_E4.wav",
+      "sustain": "bell_E4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_right-3",
+      "label": "背景钟 1_right-3",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_right-4",
+      "label": "背景钟 1_right-4",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_right-5",
+      "label": "背景钟 1_right-5",
+      "note": "C4",
+      "strike": "bell_C4.wav",
+      "sustain": "bell_C4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-1_right-6",
+      "label": "背景钟 1_right-6",
+      "note": "D4",
+      "strike": "bell_D4.wav",
+      "sustain": "bell_D4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-2_left-1",
+      "label": "背景钟 2_left-1",
+      "note": "E4",
+      "strike": "bell_E4.wav",
+      "sustain": "bell_E4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-2_left-2",
+      "label": "背景钟 2_left-2",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-2_left-3",
+      "label": "背景钟 2_left-3",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-2_right-1",
+      "label": "背景钟 2_right-1",
+      "note": "E4",
+      "strike": "bell_E4.wav",
+      "sustain": "bell_E4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-2_right-2",
+      "label": "背景钟 2_right-2",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-2_right-3",
+      "label": "背景钟 2_right-3",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-3_left-1",
+      "label": "背景钟 3_left-1",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-3_left-2",
+      "label": "背景钟 3_left-2",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-3_right-1",
+      "label": "背景钟 3_right-1",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-3_right-2",
+      "label": "背景钟 3_right-2",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-4-1",
+      "label": "背景钟 4-1",
+      "note": "A4",
+      "strike": "bell_A4.wav",
+      "sustain": "bell_A4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-5-1",
+      "label": "主钟 5-1",
+      "note": "C4",
+      "strike": "bell_C4.wav",
+      "sustain": "bell_C4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-6-1",
+      "label": "主钟 6-1",
+      "note": "D4",
+      "strike": "bell_D4.wav",
+      "sustain": "bell_D4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-7-1",
+      "label": "主钟 7-1",
+      "note": "E4",
+      "strike": "bell_E4.wav",
+      "sustain": "bell_E4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    },
+    {
+      "id": "bell-8-1",
+      "label": "前景钟 8-1",
+      "note": "G4",
+      "strike": "bell_G4.wav",
+      "sustain": "bell_G4.wav",
+      "sustainMode": "loop",
+      "pitchMeaning": "assigned experimental pitch, not measured artifact pitch"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* B: all visual feedback is transient; idle baseline elements retain their original styles. */
+.b-effects{position:fixed;inset:0;pointer-events:none;z-index:10}
+.b-bell{position:fixed;opacity:0;pointer-events:none;perspective:1000px;transition:opacity .25s;transform-origin:50% 0}
+.b-solid{position:relative;width:100%;height:100%;transform-style:preserve-3d}
+.b-solid canvas{position:absolute;inset:0;width:100%;height:100%;backface-visibility:visible}
+.b-bell.glow{filter:brightness(1.55) drop-shadow(0 0 2px #fff6b0) drop-shadow(0 0 7px #f8d36be6) drop-shadow(0 0 18px #e9b848bb)}
+.b-info{position:fixed;left:50%;bottom:10%;transform:translateX(-50%);max-width:600px;width:70%;padding:18px 24px;background:#102725ed;color:#f4e7c0;font:20px/1.6 KaiTi,serif;opacity:0;transition:opacity .2s;z-index:8}
+.b-info.visible{opacity:1}
+.b-lens{display:none;position:fixed;width:200px;height:200px;border-radius:50%;border:2px solid #ebd393;overflow:hidden;z-index:9997;pointer-events:none;background:#000;contain:strict}
+.b-lens.visible{display:block}.b-mirror,.b-mirror *{pointer-events:none!important}
+.b-no-cursor,.b-no-cursor *{cursor:none!important}
+.b-touch{display:none;position:fixed;bottom:12px;left:0;width:100%;text-align:center;color:#fff;background:#000a;font:16px sans-serif;z-index:9999}
+@media(pointer:coarse){.b-touch{display:block}}
+@media(prefers-reduced-motion:reduce){.b-bell,.b-info{transition:none}}
