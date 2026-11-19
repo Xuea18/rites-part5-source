@@ -1,0 +1,42 @@
+{
+  "report": [
+    {
+      "name": "gong",
+      "state": "playing",
+      "paused": false,
+      "time": 0.306206,
+      "url": "blob:http://127.0.0.1:5175/d1139def-3409-48ef-a782-d9f2cbd3a768",
+      "delta": 0.19999999925494194,
+      "visible": true
+    },
+    {
+      "name": "xuan",
+      "state": "playing",
+      "paused": false,
+      "time": 0.25139,
+      "url": "blob:http://127.0.0.1:5175/4e65ddbb-2512-4e14-8311-faed8841d732",
+      "delta": 0.10000000149011612,
+      "visible": true
+    },
+    {
+      "name": "pan",
+      "state": "playing",
+      "paused": false,
+      "time": 0.277369,
+      "url": "blob:http://127.0.0.1:5175/e32c27ad-f262-4d91-ae0f-84fc8c72d67b",
+      "delta": 0.10000000149011612,
+      "visible": true
+    },
+    {
+      "name": "te",
+      "state": "playing",
+      "paused": false,
+      "time": 0.246649,
+      "url": "blob:http://127.0.0.1:5175/3763a180-e3dc-4e79-a639-d80c5cf85036",
+      "delta": 1.699999999254942,
+      "visible": true
+    }
+  ],
+  "signReset": true,
+  "errors": []
+}

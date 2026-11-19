@@ -1,0 +1,410 @@
+{
+  "te": {
+    "w": 531,
+    "h": 377,
+    "layers": [
+      {
+        "file": "rack-0-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 106,
+        "top": 90,
+        "width": 291,
+        "height": 20
+      },
+      {
+        "file": "rack-0-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 95,
+        "top": 110,
+        "width": 318,
+        "height": 233
+      },
+      {
+        "file": "dancers-0.png",
+        "type": "dancer",
+        "static": false,
+        "angle": 0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 143,
+        "top": 192,
+        "width": 62,
+        "height": 151
+      },
+      {
+        "file": "dancers-1.png",
+        "type": "dancer",
+        "static": true,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 205,
+        "top": 191,
+        "width": 83,
+        "height": 152
+      },
+      {
+        "file": "dancers-2.png",
+        "type": "dancer",
+        "static": false,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 288,
+        "top": 193,
+        "width": 62,
+        "height": 139
+      }
+    ]
+  },
+  "pan": {
+    "w": 685,
+    "h": 291,
+    "layers": [
+      {
+        "file": "rack-0-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 81,
+        "top": 39,
+        "width": 198,
+        "height": 20
+      },
+      {
+        "file": "rack-0-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 67,
+        "top": 59,
+        "width": 269,
+        "height": 216
+      },
+      {
+        "file": "rack-1-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.67,
+        "phase": -0.9,
+        "left": 385,
+        "top": 47,
+        "width": 245,
+        "height": 20
+      },
+      {
+        "file": "rack-1-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.67,
+        "phase": -0.9,
+        "left": 336,
+        "top": 67,
+        "width": 307,
+        "height": 207
+      },
+      {
+        "file": "dancers-0.png",
+        "type": "dancer",
+        "static": false,
+        "angle": 0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 154,
+        "top": 138,
+        "width": 138,
+        "height": 137
+      },
+      {
+        "file": "dancers-1.png",
+        "type": "dancer",
+        "static": true,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 292,
+        "top": 128,
+        "width": 182,
+        "height": 147
+      },
+      {
+        "file": "dancers-2.png",
+        "type": "dancer",
+        "static": false,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 474,
+        "top": 127,
+        "width": 138,
+        "height": 113
+      }
+    ]
+  },
+  "xuan": {
+    "w": 716,
+    "h": 270,
+    "layers": [
+      {
+        "file": "rack-0-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 55,
+        "top": 48,
+        "width": 159,
+        "height": 20
+      },
+      {
+        "file": "rack-0-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 44,
+        "top": 68,
+        "width": 207,
+        "height": 196
+      },
+      {
+        "file": "rack-1-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.67,
+        "phase": -0.9,
+        "left": 278,
+        "top": 53,
+        "width": 180,
+        "height": 20
+      },
+      {
+        "file": "rack-1-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.67,
+        "phase": -0.9,
+        "left": 251,
+        "top": 73,
+        "width": 229,
+        "height": 191
+      },
+      {
+        "file": "rack-2-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 9.040000000000001,
+        "phase": -1.8,
+        "left": 523,
+        "top": 48,
+        "width": 161,
+        "height": 20
+      },
+      {
+        "file": "rack-2-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 9.040000000000001,
+        "phase": -1.8,
+        "left": 480,
+        "top": 68,
+        "width": 214,
+        "height": 196
+      },
+      {
+        "file": "dancers-0.png",
+        "type": "dancer",
+        "static": false,
+        "angle": 0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 58,
+        "top": 82,
+        "width": 185,
+        "height": 182
+      },
+      {
+        "file": "dancers-1.png",
+        "type": "dancer",
+        "static": true,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 243,
+        "top": 101,
+        "width": 246,
+        "height": 163
+      },
+      {
+        "file": "dancers-2.png",
+        "type": "dancer",
+        "static": false,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 489,
+        "top": 107,
+        "width": 185,
+        "height": 157
+      }
+    ]
+  },
+  "gong": {
+    "w": 768,
+    "h": 353,
+    "layers": [
+      {
+        "file": "rack-0-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 85,
+        "top": 50,
+        "width": 154,
+        "height": 20
+      },
+      {
+        "file": "rack-0-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.3,
+        "phase": 0,
+        "left": 75,
+        "top": 70,
+        "width": 194,
+        "height": 216
+      },
+      {
+        "file": "rack-1-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 8.67,
+        "phase": -0.9,
+        "left": 300,
+        "top": 57,
+        "width": 175,
+        "height": 20
+      },
+      {
+        "file": "rack-1-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 8.67,
+        "phase": -0.9,
+        "left": 269,
+        "top": 77,
+        "width": 245,
+        "height": 209
+      },
+      {
+        "file": "rack-2-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 9.040000000000001,
+        "phase": -1.8,
+        "left": 538,
+        "top": 50,
+        "width": 154,
+        "height": 20
+      },
+      {
+        "file": "rack-2-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 9.040000000000001,
+        "phase": -1.8,
+        "left": 515,
+        "top": 70,
+        "width": 188,
+        "height": 82
+      },
+      {
+        "file": "rack-3-0.png",
+        "type": "rack",
+        "static": true,
+        "angle": 0.06,
+        "period": 9.41,
+        "phase": -2.7,
+        "left": 417,
+        "top": 152,
+        "width": 284,
+        "height": 20
+      },
+      {
+        "file": "rack-3-1.png",
+        "type": "rack",
+        "static": false,
+        "angle": 0.06,
+        "period": 9.41,
+        "phase": -2.7,
+        "left": 405,
+        "top": 172,
+        "width": 316,
+        "height": 171
+      },
+      {
+        "file": "dancers-0.png",
+        "type": "dancer",
+        "static": false,
+        "angle": 0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 101,
+        "top": 107,
+        "width": 186,
+        "height": 179
+      },
+      {
+        "file": "dancers-1.png",
+        "type": "dancer",
+        "static": true,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 287,
+        "top": 118,
+        "width": 247,
+        "height": 167
+      },
+      {
+        "file": "dancers-2.png",
+        "type": "dancer",
+        "static": false,
+        "angle": -0.12,
+        "period": 6.4,
+        "phase": -0.9,
+        "left": 534,
+        "top": 149,
+        "width": 186,
+        "height": 135
+      }
+    ]
+  }
+}

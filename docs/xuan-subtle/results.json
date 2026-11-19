@@ -1,0 +1,1626 @@
+[
+  {
+    "art": 0,
+    "maxFoot": 0.7840026996000001,
+    "frames": [
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.005247726160507213,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.041337522647540835,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.059978405979520866,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04636184390277255,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.748395605524023,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.7840026996000001
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.748395605524023,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.7816186961000001
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.02282090777326915,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.05634711512612776,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.055542568557272916,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.027237609387780373,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6065444306789778,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.6339379299999938
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6065444306789778,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.6323672923999953
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.044898166847738466,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.05981568598081437,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04050180683384083,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.009534246806092926,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.2032829276470294,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.21101058794999436
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.2032829276470294,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.21084230534999573
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.050004993465402145,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.01589127051936808,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.00007427538377174267,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.009734610141384646,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.49010969444069147,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.5113064095199947
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.49010969444069147,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.510268666819996
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.028964102696420434,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.002327159756891348,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.004075454519470254,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.027892958362155468,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7435079450278212,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.7788319362999968
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7435079450278212,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.7764759798999976
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.009011594719068124,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.0006106584180273092,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.01855420622270483,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.0467355840258516,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6394912894743986,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.6687090690000008
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6394912894743986,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.6669701488000006
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.0001860835138285491,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.010601266074989,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.03969072817628228,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.05817530791223578,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.23451734864816284,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0.24355522029000087
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.23451734864816284,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0.24333084349000067
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "61.8359px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.7734px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "78.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "49.0859px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "59.9219px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "90.5234px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "100.719px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "59.2812px 114.094px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "78.7266px 106.453px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "59.2812px 86.0469px",
+          "maxFootShift": 0
+        }
+      ]
+    ]
+  },
+  {
+    "art": 1,
+    "maxFoot": 0.8356165550000002,
+    "frames": [
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.004938254469069194,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.040794187049538376,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.059957779500865095,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7473930149951546,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.8356165550000002
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7473930149951546,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.8341635650000002
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.022614986774073153,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.056260770469782756,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.05563332498659491,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6095299812959891,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.6799527909999967
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6095299812959891,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.6789784329999972
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04523879004618917,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.059778443727453515,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.040155224835273215,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.1966761921630694,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.21786110799999384
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.1966761921630694,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.2177585439999947
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04972212441618977,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.015562278178191627,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.00005472990261913131,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.49723522946453874,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.5536298539999979
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.49723522946453874,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.5529802819999982
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.028963816217596076,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.0023270795428001617,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.0040755576518728565,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7435079450278212,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.8312037669999965
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7435079450278212,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.829767870999997
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.008603706074354869,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.0007137908211370524,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.019074566436129235,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6316530737193594,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.7048713679999972
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6316530737193594,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.7038286339999975
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.00029352914323192843,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.00989286107975699,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.03878471043977288,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.25276522990286276,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0.2802761824999943
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.25276522990286276,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0.2801052424999951
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "54.3594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "70.7656px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "61.5391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "78.2891px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "55.0391px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "73.1641px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "63.25px 124.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "84.1016px 111.438px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "63.25px 107.344px",
+          "maxFootShift": 0
+        }
+      ]
+    ]
+  },
+  {
+    "art": 2,
+    "maxFoot": 0.5751417449000003,
+    "frames": [
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.0050425098686802715,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04097971068912513,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7477596767274047,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.5751417449000003
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7477596767274047,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.5738547939000002
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.022617507787978927,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.056261859088543836,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6094956057591291,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.46773848669999774
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6094956057591291,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.4668754724999981
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04454442292053841,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.059850063445410315,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.2101688962644318,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.16019700061399822
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.2101688962644318,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.16009101641399853
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.04926943080008725,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.0150502831290054,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.5083203198643494,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.38935955805000094
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.5083203198643494,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.38876907465000077
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.028338834010956628,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.00213298436041586,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7451815851255145,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.5731838939000002
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7451815851255145,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.5718969429000001
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.008206703626653981,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.0008247383685661507,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6235907859502358,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.4786141867000028
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6235907859502358,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.4777208913000023
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.00013424229252552084,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": -0.011030468744024833,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.22396068583890236,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0.1707561537520007
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.22396068583890236,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0.17063502895200058
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "62.4297px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "84.8203px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "77.25px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "96.8047px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "43.5078px 86.3906px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "57.3828px 92.7031px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "43.5078px 71.25px",
+          "maxFootShift": 0
+        }
+      ]
+    ]
+  },
+  {
+    "art": 3,
+    "maxFoot": 0.38525221646000024,
+    "frames": [
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.005354674461630763,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7486820598766843,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.38525221646000024
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7486820598766843,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.38431186146000024
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.022219531364411925,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6151968247902406,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.3149177617000003
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6151968247902406,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.3142761077000003
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.044196465860230426,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.21696412886152897,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.10919208161299711
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.21696412886152897,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.10911464061299733
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.05014559720092852,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.4865088694543481,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.247670817348005
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.4865088694543481,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.2472725493480046
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.030004307297995757,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.7401556821137361,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.38072135718000766
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.7401556821137361,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.37980312818000705
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.009146297093321105,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.6419898699097955,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.3289769762600049
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.6419898699097955,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.3282800072600045
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0.0003681700740745068,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": -0.26366819500631905,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0.13304382426599767
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0.26366819500631905,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0.13292213126599783
+        }
+      ],
+      [
+        {
+          "type": "xuan-piece rack fixed",
+          "angle": 0,
+          "origin": "134.148px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece rack",
+          "angle": 0,
+          "origin": "146.594px 0px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "28.5781px 139.219px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer fixed",
+          "angle": 0,
+          "origin": "38.2578px 140.141px",
+          "maxFootShift": 0
+        },
+        {
+          "type": "xuan-piece dancer",
+          "angle": 0,
+          "origin": "28.5781px 128.156px",
+          "maxFootShift": 0
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+.rites_part5_chime_series.xuan-ready{z-index:1}
+.rites_part5_text11,.rites_part5_text11 *{pointer-events:none}
+.xuan-ready .xuan-art{pointer-events:none;cursor:pointer}
+.xuan-ready .xuan-art.xuan-current{pointer-events:auto}
+.xuan-ready .xuan-art img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;pointer-events:none}
+.xuan-animation{visibility:hidden}
+.xuan-playing .xuan-animation{visibility:visible}
+.xuan-playing .xuan-poster{visibility:hidden}
+.xuan-pending{opacity:.85!important}
+/* Match visible artwork height, excluding each PNG's transparent margins. */
+.rites_part5 .rites_part5_chime_series.xuan-ready .rites_part5_chime_series_pic1[data-v-bfd0f4f0]{width:40.5%;bottom:calc(20% - .352vw)}
+.rites_part5 .rites_part5_chime_series.xuan-ready .rites_part5_chime_series_pic2[data-v-bfd0f4f0]{width:51%;bottom:calc(20% - .332vw)}
+.rites_part5 .rites_part5_chime_series.xuan-ready .rites_part5_chime_series_pic3[data-v-bfd0f4f0]{width:45%;bottom:calc(20% - .701vw)}
+.rites_part5 .rites_part5_chime_series.xuan-ready .rites_part5_chime_series_pic4[data-v-bfd0f4f0]{width:33%;bottom:calc(20% - 1.409vw)}
+.xuan-ready .rites_part5_chime_series_text{filter:saturate(.55)}
+.xuan-ready .rites_part5_chime_series_text.xuan-selected{filter:brightness(1.13) saturate(1)}

@@ -1,0 +1,23 @@
+{
+  "strike": {
+    "early": 0.1677455967276994,
+    "at1": 0.00019488612779609672,
+    "at3": 0,
+    "at5": 0,
+    "releaseStart": 0,
+    "releaseMiddle": 0,
+    "releaseEnd": 0,
+    "silence": 0
+  },
+  "sustain": {
+    "early": 0.18973008421220855,
+    "at1": 0.194474653039352,
+    "at3": 0.18667758108762447,
+    "at5": 0.18633744412185366,
+    "releaseStart": 0.16772897397325304,
+    "releaseMiddle": 0.00878292732847399,
+    "releaseEnd": 0.00010008622879823557,
+    "silence": 0
+  },
+  "interaction": "One sustained voice; listening stays active during hold; release clears visual and info."
+}

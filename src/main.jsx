@@ -10,12 +10,28 @@ import './styles.css';
 // B additions are contained in experiment/*; the original timeline is reused.
 import {installEnhancedMouse} from './experiment/enhancedMouse';
 import {backgroundUrl} from './experiment/audioManager';
+import {installRackGlissando} from './experiment/rackGlissando';
+import {installXuan} from './experiment/xuan';
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
 
 function OriginalNav() {
  const [visible,setVisible]=useState(true);
  const [sound,setSound]=useState(false);
  const audio=useRef(null);
+ useEffect(()=>{
+  const music=audio.current,normalVolume=music.volume;
+  let frame,target=normalVolume,from=normalVolume,started=performance.now();
+  const tick=now=>{
+   const next=window.__RACK?.enabled()?0:normalVolume;
+   if(next!==target){from=music.volume;target=next;started=now;}
+   const t=Math.min(1,(now-started)/600),ease=t*t*(3-2*t);
+   music.volume=from+(target-from)*ease;
+   frame=requestAnimationFrame(tick);
+  };
+  frame=requestAnimationFrame(tick);
+  // Only adjust gain; never override the user's play/pause choice.
+  return()=>{cancelAnimationFrame(frame);music.volume=normalVolume;};
+ },[]);
  useEffect(()=>{
   let previous=scrollY;
   const onScroll=()=>{const next=scrollY;if(Math.abs(next-previous)>3){setVisible(next<previous||next<80);previous=next;}};
@@ -74,6 +90,7 @@ function Part5() {
    host.querySelectorAll('.rites_part5_chime_series_pic').forEach((e,index)=>{e.style.opacity=index===i?'1':'0';});
   }));
   let jump;
+  cleanups.push(installXuan(series));
   dots.forEach((el,i)=>cleanups.push(activate(el,'继续探索，第'+(i+1)+'个提示点',()=>{
    jump?.kill();const state={y:scrollY};
    jump=gsap.to(state,{y:Math.min(scrollY+2000,host.querySelector('.smooth-content').offsetHeight-innerHeight),duration:reduced.matches?0:1,ease:'sine.inOut',onUpdate:()=>scrollTo(0,state.y)});
@@ -97,7 +114,8 @@ function Part5() {
   frame=requestAnimationFrame(tick);
   addEventListener('resize',resize);
   let cleanB;installEnhancedMouse(host).then(clean=>{if(disposed)clean();else cleanB=clean;}).catch(console.error);
-  return()=>{disposed=true;cleanB?.();cancelAnimationFrame(frame);jump?.kill();cleanups.forEach(f=>f());removeEventListener('resize',resize);smoother.kill();ctx.revert();};
+  const cleanRack=installRackGlissando(host);
+  return()=>{disposed=true;cleanRack();cleanB?.();cancelAnimationFrame(frame);jump?.kill();cleanups.forEach(f=>f());removeEventListener('resize',resize);smoother.kill();ctx.revert();};
  },[]);
  return <main ref={root} className="part5-scroll" aria-label="礼乐之邦：编钟与乐悬制度">
   <div className="smooth-wrapper"><div className="smooth-content" /></div>

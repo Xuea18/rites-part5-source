@@ -3,17 +3,20 @@ import {bells} from './bells';
 import {createAudioManager} from './audioManager';
 import {createTelemetry} from './telemetry';
 import './mouse.css';
-export const parameters={hold:600,double:280,deadzone:8,hover:0,zoomMs:400,rotationMs:8000,lens:200,magnification:2};
+export const parameters={hold:600,double:280,deadzone:8,hover:0,zoomMs:450,lens:200,magnification:2};
 export async function installEnhancedMouse(host){
  const viewport=host.querySelector('.part5-viewport');
  const audio=createAudioManager(),log=createTelemetry(9),listeners=[];
  const on=(el,type,fn,opts)=>{el.addEventListener(type,fn,opts);listeners.push(()=>el.removeEventListener(type,fn,opts));};
  const effects=document.createElement('div');effects.className='b-effects';viewport.append(effects);
+ // B: viewport-wide backdrop above navigation; the selected object has its own higher stacking context.
+ const backdrop=document.createElement('div');backdrop.className='b-focus-backdrop';backdrop.setAttribute('aria-hidden','true');host.append(backdrop);
+ const focusLayer=document.createElement('div');focusLayer.className='b-focus-layer';host.append(focusLayer);
  const info=document.createElement('aside');info.className='b-info';info.setAttribute('role','status');effects.append(info);
  const note=document.createElement('div');note.className='b-touch';note.textContent='请使用电脑浏览器体验';host.append(note);
  const lens=document.createElement('div');lens.className='b-lens';lens.setAttribute('aria-hidden','true');document.body.append(lens);
  const models=[];let dead=false,hover=null,zoom=null,press=null,pending=null,pendingTimer,holdTimer,raf,popupTimer,lensOn=false,drag=false,dragOrder=0,dragSeen=new Set(),pointer={x:-1000,y:-1000},offset={x:0,y:0},desired={x:0,y:0};
- let rotating=null,sustainStop=null,visibleSince=new Map();const zoomTransitions=new Map();
+ let sustainStop=null,visibleSince=new Map();const zoomTransitions=new Map();
  const opacity=el=>{let result=1;for(let e=el;e&&e!==viewport;e=e.parentElement){const s=getComputedStyle(e);if(s.display==='none'||s.visibility==='hidden')return 0;result*=Number(s.opacity);}return result;};
  for(const data of bells){
   const img=host.querySelector(data.selector);if(!img)throw Error(`Missing bell ${data.id}`);
@@ -23,21 +26,20 @@ export async function installEnhancedMouse(host){
   const alpha=canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data;
   const el=document.createElement('div');el.className='b-bell';el.dataset.bell=data.id;el.setAttribute('aria-hidden','true');
   const solid=document.createElement('div');solid.className='b-solid';el.append(solid);effects.append(el);
-  // B: shallow extrusion gives the original 2D texture thickness during Y rotation, without a new image asset.
-  for(let z=-5;z<=5;z++){const face=document.createElement('canvas');face.width=canvas.width;face.height=canvas.height;face.getContext('2d').drawImage(canvas,0,0);face.style.transform=`translateZ(${z}px)`;face.style.filter=Math.abs(z)===5?'':'brightness(.55)';solid.append(face);}
+  // B: original flat texture, with no extrusion or rotation.
+  solid.append(canvas);
   models.push({...data,img,canvas,alpha,el,solid,rect:null,shown:false,swingUntil:0,originalClip:img.style.clipPath});
  }
  const showInfo=b=>{clearTimeout(popupTimer);info.textContent=b.description;info.dataset.target=b.id;info.classList.add('visible');};
  const hideInfo=()=>{clearTimeout(popupTimer);info.classList.remove('visible');};
  const resetMasks=()=>{for(const m of models)m.img.style.clipPath=m.originalClip;};
  const mask=b=>{const [x,y,w,h]=b.crop.map(v=>v*100);b.img.style.clipPath=`polygon(evenodd,0% 0%,100% 0%,100% 100%,0% 100%,0% 0%,${x}% ${y}%,${x}% ${y+h}%,${x+w}% ${y+h}%,${x+w}% ${y}%,${x}% ${y}%,0% 0%)`;};
- const stopHold=()=>{clearTimeout(holdTimer);sustainStop?.();sustainStop=null;hideInfo();};
+ const stopHold=()=>{clearTimeout(holdTimer);sustainStop?.();sustainStop=null;models.forEach(b=>b.el.classList.remove('listening'));hideInfo();};
  const cancelPending=()=>{clearTimeout(pendingTimer);pending=null;};
- const rotate=b=>{rotating?.cancel();rotating=b.solid.animate([{transform:'rotateY(0deg)'},{transform:'rotateY(360deg)'}],{duration:parameters.rotationMs,easing:'linear',iterations:1});};
- const unzoom=()=>{if(!zoom)return;rotating?.cancel();zoomTransitions.set(zoom.id,{from:zoom.displayRect,start:performance.now()});zoom=null;};
- const toggleZoom=b=>{stopHold();if(zoom===b){unzoom();return;}if(zoom)unzoom();zoom=b;zoomTransitions.set(b.id,{from:b.displayRect||b.rect,start:performance.now()});rotate(b);};
+ const unzoom=()=>{if(!zoom)return;zoomTransitions.set(zoom.id,{from:zoom.displayRect,start:performance.now()});zoom=null;};
+ const toggleZoom=b=>{stopHold();if(zoom===b){unzoom();return;}if(zoom)unzoom();zoom=b;b.swingUntil=0;b.el.getAnimations().forEach(a=>a.cancel());zoomTransitions.set(b.id,{from:b.displayRect||b.rect,start:performance.now()});};
  const strike=(b,soft=false)=>{audio.play(b,{volume:soft?.2:.65});b.swingUntil=performance.now()+800;b.el.animate([{rotate:'0deg'},{rotate:'4deg'},{rotate:'-3deg'},{rotate:'0deg'}],{duration:800,easing:'ease-out'});if(!soft){showInfo(b);popupTimer=setTimeout(hideInfo,3000);}};
- const single=b=>{if(zoom===b){rotate(b);log.record('rotate',b.id);}else{strike(b);log.record('click',b.id);}};
+ const single=b=>{if(zoom)return;strike(b);log.record('click',b.id);};
  const sample=(b,x,y)=>{const r=b.rect;if(!r||!b.shown)return false;const u=(x-r.x)/r.width,v=(y-r.y)/r.height;if(u<0||u>=1||v<0||v>=1)return false;return b.alpha[(Math.floor(v*b.canvas.height)*b.canvas.width+Math.floor(u*b.canvas.width))*4+3]>45;};
  const inside=(r,x,y)=>r&&x>=r.x&&x<=r.x+r.width&&y>=r.y&&y<=r.y+r.height;
  const hit=(x,y,near=false)=>{
@@ -56,8 +58,9 @@ export async function installEnhancedMouse(host){
   if(e.pointerType!=='mouse'||e.button!==0||isControl(e)||!inScene(e))return;
   // B: suppress native image/text drag and keep receiving release outside a bell.
   e.preventDefault();host.setPointerCapture(e.pointerId);
+  audio.unlock();
   const b=hit(e.clientX,e.clientY);press={id:e.pointerId,b,x:e.clientX,y:e.clientY,held:false,cancelled:false};dragSeen.clear();dragOrder=0;
-  if(b){e.preventDefault();holdTimer=setTimeout(()=>{if(!press||press.cancelled)return;cancelPending();press.held=true;sustainStop=audio.play(b,{loop:true});showInfo(b);log.record('longpress',b.id);},parameters.hold);}
+  if(b){e.preventDefault();holdTimer=setTimeout(()=>{if(!press||press.cancelled)return;cancelPending();press.held=true;b.swingUntil=0;b.el.getAnimations().forEach(a=>a.cancel());b.el.classList.add('listening');sustainStop=audio.play(b,{loop:true});showInfo(b);log.record('longpress',b.id);},parameters.hold);}
  });
  on(host,'dragstart',e=>{if(inScene(e))e.preventDefault();});
  on(window,'pointermove',e=>{
@@ -90,11 +93,12 @@ export async function installEnhancedMouse(host){
  const quotes=[1,2,3,5,6,11,12,13,14].map(i=>host.querySelector(`.rites_part5_text${i}`));
  // B: only substantive quote blocks count; empty original containers are excluded.
  const actualQuotes=quotes.filter(q=>q?.textContent.trim());log.session.totalQuotes=actualQuotes.length;
- let mirror=null,mirrorPairs=[],lastMirror=0;
+ let mirror=null,mirrorPairs=[],lastMirror=0,mirrorSignature='';
  const syncLens=now=>{
   if(!lensOn)return;
   lens.style.left=`${pointer.x-parameters.lens/2}px`;lens.style.top=`${pointer.y-parameters.lens/2}px`;
-  if(!mirror){mirror=viewport.cloneNode(true);mirror.className='b-mirror';mirror.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));mirror.querySelectorAll('[tabindex]').forEach(e=>e.removeAttribute('tabindex'));mirror.inert=true;lens.append(mirror);const children=[...mirror.querySelectorAll('*')];mirrorPairs=[[viewport,mirror],...[...viewport.querySelectorAll('*')].map((e,i)=>[e,children[i]])];for(const [src,dst] of mirrorPairs){if(src instanceof HTMLCanvasElement&&dst instanceof HTMLCanvasElement){dst.width=src.width;dst.height=src.height;dst.getContext('2d').drawImage(src,0,0);}}}
+  const signature=models.map(b=>b.el.parentElement.className).join('|')+info.parentElement.className;
+  if(!mirror||signature!==mirrorSignature){mirror?.remove();mirrorSignature=signature;mirror=document.createElement('div');mirror.className='b-mirror';mirrorPairs=[];for(const source of [viewport,backdrop,focusLayer]){const clone=source.cloneNode(true);mirror.append(clone);const children=[...clone.querySelectorAll('*')];mirrorPairs.push([source,clone],...[...source.querySelectorAll('*')].map((e,i)=>[e,children[i]]));}mirror.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));mirror.querySelectorAll('[tabindex]').forEach(e=>e.removeAttribute('tabindex'));mirror.inert=true;lens.append(mirror);for(const [src,dst] of mirrorPairs){if(src instanceof HTMLCanvasElement&&dst instanceof HTMLCanvasElement){dst.width=src.width;dst.height=src.height;dst.getContext('2d').drawImage(src,0,0);}}}
   // Textures are immutable. Synchronize their live transforms and effects, not hundreds of identical bitmaps every frame.
   if(now-lastMirror>32){for(const [src,dst] of mirrorPairs){if(!dst)continue;const s=getComputedStyle(src);for(const k of ['position','left','top','right','bottom','width','height','transform','translate','rotate','scale','opacity','display','visibility','filter','clip-path','z-index','transform-origin','perspective'])dst.style.setProperty(k,s.getPropertyValue(k));if(src instanceof HTMLVideoElement&&dst instanceof HTMLVideoElement&&src.readyState>=2){dst.muted=true;if(Math.abs(dst.currentTime-src.currentTime)>.08)dst.currentTime=src.currentTime;}}lastMirror=now;}
   mirror.style.position='absolute';mirror.style.width=innerWidth+'px';mirror.style.height=innerHeight+'px';mirror.style.inset='0 auto auto 0';mirror.style.transformOrigin='0 0';mirror.style.transform=`translate(${parameters.lens/2-pointer.x*2}px,${parameters.lens/2-pointer.y*2}px) scale(2)`;
@@ -103,15 +107,18 @@ export async function installEnhancedMouse(host){
   if(dead)return;
   offset.x+=(desired.x-offset.x)*.13;offset.y+=(desired.y-offset.y)*.13;
   resetMasks();const time=Number(host.dataset.time||0);
+  backdrop.classList.toggle('active',Boolean(zoom));
+  const infoParent=zoom?focusLayer:effects;if(info.parentElement!==infoParent)infoParent.append(info);
   const images=new Set(models.map(b=>b.img));for(const img of images)img.style.translate=`${offset.x}px ${offset.y}px`;
   for(const b of models){const r=b.img.getBoundingClientRect(),[x,y,w,h]=b.crop;b.rect={x:r.x+x*r.width,y:r.y+y*r.height,width:w*r.width,height:h*r.height};b.shown=opacity(b.img)>.1&&time<37.5&&b.rect.y+b.rect.height>0&&b.rect.y<innerHeight;
    let target=b.rect;const enlarging=zoom===b;
    if(enlarging){const scale=Math.min(innerHeight*.68/b.rect.height,innerWidth*.45/b.rect.width,2.2);target={width:b.rect.width*scale,height:b.rect.height*scale,x:innerWidth/2-b.rect.width*scale/2,y:innerHeight/2-b.rect.height*scale/2};}
    const transition=zoomTransitions.get(b.id);
    if(transition){let t=Math.min(1,(now-transition.start)/parameters.zoomMs);t=t*t*(3-2*t);const from=transition.from||target;target=Object.fromEntries(Object.keys(target).map(k=>[k,from[k]+(target[k]-from[k])*t]));if(t===1)zoomTransitions.delete(b.id);}
-   b.displayRect=target;const active=b.shown&&(b===hover||enlarging||transition||b.swingUntil>now);
+   b.displayRect=target;const listening=b.el.classList.contains('listening');const active=b.shown&&(b===hover||enlarging||transition||listening||b.swingUntil>now);
+   const layer=enlarging||(!zoom&&transition)?focusLayer:effects;if(b.el.parentElement!==layer)layer.append(b.el);
    b.el.style.opacity=active?'1':'0';b.el.style.left=target.x+'px';b.el.style.top=target.y+'px';b.el.style.width=target.width+'px';b.el.style.height=target.height+'px';b.el.classList.toggle('glow',b===hover);b.el.classList.toggle('zoomed',enlarging);b.el.style.zIndex=enlarging?'4':'1';
-   if(b.shown&&(enlarging||transition||b.swingUntil>now))mask(b);
+   if(b.shown&&(enlarging||transition||listening||b.swingUntil>now))mask(b);
   }
   strum();
   if(zoom&&!zoom.shown){unzoom();cancel();}
@@ -121,5 +128,5 @@ export async function installEnhancedMouse(host){
  raf=requestAnimationFrame(tick);
  // B: diagnostics exposed without any experiment UI, also used by the per-bell verification script.
  window.__EXP_B={bells:models,log,parameters,hit,export:log.exportAll,state:()=>({pressed:press?{id:press.b?.id,held:press.held,cancelled:press.cancelled}:null,lensOn,zoom:zoom?.id,drag})};
- return ()=>{dead=true;cancelAnimationFrame(raf);cancel();rotating?.cancel();audio.dispose();log.dispose();listeners.forEach(f=>f());resetMasks();models.forEach(b=>b.img.style.removeProperty('translate'));effects.remove();lens.remove();note.remove();delete window.__EXP_B;};
+ return ()=>{dead=true;cancelAnimationFrame(raf);cancel();audio.dispose();log.dispose();listeners.forEach(f=>f());resetMasks();models.forEach(b=>b.img.style.removeProperty('translate'));effects.remove();backdrop.remove();focusLayer.remove();lens.remove();note.remove();delete window.__EXP_B;};
 }

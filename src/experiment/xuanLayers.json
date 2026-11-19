@@ -1,0 +1,96 @@
+{
+  "te": {
+    "w": 531,
+    "h": 377,
+    "layers": [
+      {
+        "file": "bell-rack-1.png",
+        "type": "rack",
+        "origin": "47.740112994350284% 23.872679045092838%"
+      },
+      {
+        "file": "dancers.png",
+        "type": "dancer",
+        "origin": "46.32768361581921% 90.71618037135278%"
+      }
+    ]
+  },
+  "pan": {
+    "w": 685,
+    "h": 291,
+    "layers": [
+      {
+        "file": "bell-rack-1.png",
+        "type": "rack",
+        "origin": "29.34306569343066% 13.402061855670103%"
+      },
+      {
+        "file": "bell-rack-2.png",
+        "type": "rack",
+        "origin": "71.38686131386861% 16.151202749140893%"
+      },
+      {
+        "file": "dancers.png",
+        "type": "dancer",
+        "origin": "55.839416058394164% 94.15807560137456%"
+      }
+    ]
+  },
+  "xuan": {
+    "w": 716,
+    "h": 270,
+    "layers": [
+      {
+        "file": "bell-rack-1.png",
+        "type": "rack",
+        "origin": "20.53072625698324% 17.77777777777778%"
+      },
+      {
+        "file": "bell-rack-2.png",
+        "type": "rack",
+        "origin": "50.977653631284916% 19.62962962962963%"
+      },
+      {
+        "file": "bell-rack-3.png",
+        "type": "rack",
+        "origin": "81.91340782122904% 17.77777777777778%"
+      },
+      {
+        "file": "dancers.png",
+        "type": "dancer",
+        "origin": "51.047486033519554% 97.4074074074074%"
+      }
+    ]
+  },
+  "gong": {
+    "w": 768,
+    "h": 353,
+    "layers": [
+      {
+        "file": "bell-rack-1.png",
+        "type": "rack",
+        "origin": "22.330729166666664% 14.164305949008499%"
+      },
+      {
+        "file": "bell-rack-2.png",
+        "type": "rack",
+        "origin": "50.911458333333336% 16.147308781869686%"
+      },
+      {
+        "file": "bell-rack-3.png",
+        "type": "rack",
+        "origin": "79.23177083333334% 14.164305949008499%"
+      },
+      {
+        "file": "bell-rack-4.png",
+        "type": "rack",
+        "origin": "73.2421875% 43.05949008498583%"
+      },
+      {
+        "file": "dancers.png",
+        "type": "dancer",
+        "origin": "53.385416666666664% 80.73654390934844%"
+      }
+    ]
+  }
+}

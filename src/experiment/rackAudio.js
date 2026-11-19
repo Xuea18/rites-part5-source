@@ -1,0 +1,13 @@
+// Standalone Web Audio synthesis; no samples, network requests or dependencies.
+export const partialRatios=[1,2,2.76,5.4,8.93,13.3];
+export function createRackAudio(){
+ let ctx,master,wet,convolver,muted=false,volume=.55,reverb=.28;const voices=new Set();
+ function unlock(){if(!ctx){ctx=new AudioContext();master=ctx.createGain();master.gain.value=volume;master.connect(ctx.destination);wet=ctx.createGain();wet.gain.value=reverb;convolver=ctx.createConvolver();const impulse=ctx.createBuffer(2,ctx.sampleRate*2.8,ctx.sampleRate);for(let c=0;c<2;c++){const a=impulse.getChannelData(c);for(let i=0;i<a.length;i++)a[i]=(Math.random()*2-1)*Math.exp(-i/ctx.sampleRate*3.1);}convolver.buffer=impulse;convolver.connect(wet).connect(master);}ctx.resume().catch(()=>{});}
+ function strike(midi,layer,force,duration){unlock();if(ctx.state!=='running')return;const now=ctx.currentTime,tail=duration??(layer==='lower'?4.8:layer==='middle'?3:2.1),f=440*2**((midi-69)/12),bus=ctx.createGain(),nodes=[];
+ bus.gain.value=.23*force;bus.connect(master);bus.connect(convolver);
+ partialRatios.forEach((ratio,i)=>{if(f*ratio>=ctx.sampleRate*.46)return;const gain=ctx.createGain(),amplitude=[.5,.24,.15,.09,.055,.035][i],decay=tail/(1+i*.5);gain.gain.setValueAtTime(.00001,now);gain.gain.exponentialRampToValueAtTime(amplitude,now+.005);gain.gain.exponentialRampToValueAtTime(.00001,now+decay);gain.connect(bus);nodes.push(gain);for(const cents of [-5,5]){const oscillator=ctx.createOscillator();oscillator.frequency.value=f*ratio;oscillator.detune.value=cents;oscillator.connect(gain);oscillator.start(now);oscillator.stop(now+tail);nodes.push(oscillator);}});
+ const noise=ctx.createBufferSource(),buffer=ctx.createBuffer(1,Math.ceil(ctx.sampleRate*.02),ctx.sampleRate),data=buffer.getChannelData(0);for(let i=0;i<data.length;i++)data[i]=(Math.random()*2-1)*(1-i/data.length);noise.buffer=buffer;const band=ctx.createBiquadFilter();band.type='bandpass';band.frequency.value=Math.min(6500,f*7);band.Q.value=1.2;const attack=ctx.createGain();attack.gain.value=.12;noise.connect(band).connect(attack).connect(bus);noise.start(now);nodes.push(noise,band,attack);
+ const dispose=()=>{nodes.forEach(n=>n.disconnect());bus.disconnect();voices.delete(timer);};const timer=setTimeout(dispose,(tail+.1)*1000);voices.add(timer);
+ }
+ return{unlock,strike,setVolume(v){volume=v;if(master)master.gain.setTargetAtTime(muted?0:v,ctx.currentTime,.03);},setMuted(v){muted=v;if(master)master.gain.setTargetAtTime(v?0:volume,ctx.currentTime,.03);},setReverb(v){reverb=v;if(wet)wet.gain.setTargetAtTime(v,ctx.currentTime,.03);},dispose(){voices.forEach(clearTimeout);ctx?.close().catch(()=>{});},state:()=>({volume,muted,reverb,state:ctx?.state})};
+}

@@ -1,0 +1,31 @@
+{
+  "exact": {
+    "gong": {
+      "layers": 5,
+      "maxChannelDiff": 0
+    },
+    "xuan": {
+      "layers": 4,
+      "maxChannelDiff": 0
+    },
+    "pan": {
+      "layers": 3,
+      "maxChannelDiff": 0
+    },
+    "te": {
+      "layers": 2,
+      "maxChannelDiff": 0
+    }
+  },
+  "timings": [
+    1370,
+    1630,
+    1910,
+    2170,
+    960
+  ],
+  "repeatedClickContinues": true,
+  "automaticStop": true,
+  "keyboard": true,
+  "reducedMotion": true
+}

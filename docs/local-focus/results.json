@@ -1,0 +1,77 @@
+[
+  {
+    "width": 1366,
+    "height": 768,
+    "focused": {
+      "zoom": "bell-5-1",
+      "blur": "blur(12px)",
+      "background": "rgba(0, 0, 0, 0.3)",
+      "opacity": "1",
+      "rect": [
+        0,
+        0,
+        1366,
+        768
+      ],
+      "layer": "b-focus-layer",
+      "canvases": 1,
+      "transform": "none",
+      "animations": 0
+    },
+    "singleClickInert": true,
+    "longPress": true,
+    "crossSelection": true,
+    "restored": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "focused": {
+      "zoom": "bell-5-1",
+      "blur": "blur(12px)",
+      "background": "rgba(0, 0, 0, 0.3)",
+      "opacity": "1",
+      "rect": [
+        0,
+        0,
+        1440,
+        900
+      ],
+      "layer": "b-focus-layer",
+      "canvases": 1,
+      "transform": "none",
+      "animations": 0
+    },
+    "singleClickInert": true,
+    "longPress": true,
+    "crossSelection": true,
+    "restored": true,
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "focused": {
+      "zoom": "bell-5-1",
+      "blur": "blur(12px)",
+      "background": "rgba(0, 0, 0, 0.3)",
+      "opacity": "1",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "layer": "b-focus-layer",
+      "canvases": 1,
+      "transform": "none",
+      "animations": 0
+    },
+    "singleClickInert": true,
+    "longPress": true,
+    "crossSelection": true,
+    "restored": true,
+    "errors": []
+  }
+]
