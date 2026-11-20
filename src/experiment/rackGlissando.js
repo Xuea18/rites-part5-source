@@ -11,7 +11,7 @@ export function installRackGlissando(host){
  const panel=document.createElement('div');panel.className='rack-controls';panel.setAttribute('role','group');panel.setAttribute('aria-label','编钟刮奏声音设置');panel.innerHTML='<button type="button" aria-pressed="false">静音</button><label>音量 <input aria-label="刮奏音量" type="range" min="0" max="1" step=".01" value=".55"></label><label>混响 <input aria-label="刮奏混响" type="range" min="0" max=".7" step=".01" value=".28"></label>';Object.assign(panel.style,{position:'fixed',bottom:'12px',right:'16px',zIndex:9999,font:'14px serif',color:'#efd7a0',background:'#100e0bbd',padding:'7px 10px',borderRadius:'4px',display:'none',gap:'12px',alignItems:'center'});panel.querySelectorAll('input').forEach(e=>{e.style.width='75px';e.style.accentColor='#cfa354';});host.append(panel);
  const audio=createRackAudio(),g=canvas.getContext('2d'),off=[],events=[],pulses=[],trail=[];let frame,debug=false,active=false,last=null,seen=new Set(),lastFire=-Infinity,gesture=0,direction=0,muted=false;
  const on=(el,name,fn,opts)=>{el.addEventListener(name,fn,opts);off.push(()=>el.removeEventListener(name,fn,opts));};
- const enabled=()=>Number(host.dataset.time)>49&&video.currentTime>=23&&getComputedStyle(video).display!=='none';
+ const enabled=()=>Number(host.dataset.time)>49&&getComputedStyle(video).display!=='none';
  const queue=[];let queueTimer,clickStart=null;const originalTouchAction=video.style.touchAction;
  const at=(x,y)=>boxes().find(b=>x>=b.x&&x<=b.x+b.width&&y>=b.y&&y<=b.y+b.height);
  on(window,'pointermove',e=>{if(clickStart&&Math.hypot(e.clientX-clickStart.x,e.clientY-clickStart.y)>8)clickStart.moved=true;},true);

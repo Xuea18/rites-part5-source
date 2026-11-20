@@ -8,9 +8,9 @@ html::-webkit-scrollbar-thumb:active{background:#444;border-radius:.1rem}
 html:lang(zh) h1,html:lang(zh) h2,html:lang(zh) h3,html:lang(zh) h4{font-family:"Source Han Serif SC Bold";font-size:.625rem;line-height:.5684rem;font-weight:400;text-size-adjust:100%!important;-webkit-text-size-adjust:100%!important;-moz-text-size-adjust:100%!important}
 html:lang(zh) h5,html:lang(zh) h6{font-family:"Source Han Serif SC Light";font-size:.4167rem;line-height:.47rem;font-weight:400;text-size-adjust:100%!important;-webkit-text-size-adjust:100%!important;-moz-text-size-adjust:100%!important}
 html:lang(zh) html,html:lang(zh) body,html:lang(zh) p{font-family:KaiTi;font-size:.4167rem;line-height:.6667rem;text-size-adjust:100%!important;-webkit-text-size-adjust:100%!important;-moz-text-size-adjust:100%!important}
-@font-face{font-family:"Source Han Serif SC Bold";src:url(/assets/rites5/SourceHanSerifSC-Bold.otf)}
-@font-face{font-family:"Source Han Serif SC Light";src:url(/assets/rites5/SourceHanSerifSC-Light.otf)}
-@font-face{font-family:KaiTi;src:url(/assets/rites5/FangZhengKiti.woff2)}
+@font-face{font-family:"Source Han Serif SC Bold";src:url(/assets/rites5/SourceHanSerifSC-Bold-subset.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Source Han Serif SC Light";src:url(/assets/rites5/SourceHanSerifSC-Light-subset.woff2) format("woff2");font-display:swap}
+@font-face{font-family:KaiTi;src:url(/assets/rites5/FangZhengKiti-subset.woff2) format("woff2");font-display:swap}
 .seeking-icon[data-v-35567810]{display:flex;justify-content:center;align-items:center;width:100%;height:100%;min-width:.1rem;min-height:.1rem;background-size:80%;border-radius:50%;cursor:pointer;position:relative}
 .seeking-icon .solid-circle[data-v-35567810]{width:60%;height:60%;border-radius:50%;background-color:#fff;box-shadow:0 0 .2rem #fff;animation:seeking-icon-circle-flicker-35567810 2s linear infinite alternate}
 .seeking-icon:hover .solid-circle[data-v-35567810]{animation:none}

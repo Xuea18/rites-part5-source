@@ -2,7 +2,7 @@
   "version": 1,
   "provenance": "Only rites_bg.mp3 existed in the baseline. Bell sounds are newly synthesized experimental stimuli, not recordings of historical bells. Sustain reuses the same unmodified strike file in a loop. No preexisting strike/sustain/UI audio was found.",
   "background": {
-    "file": "rites_bg.mp3",
+    "file": "rites_bg-lite.mp3",
     "purpose": "原站礼乐之邦背景音乐",
     "sha256": "3508b4219f007aee591caa3ad884183faed718cdf1093b57ee55ba76989fee21"
   },

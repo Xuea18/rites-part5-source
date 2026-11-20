@@ -14,3 +14,4 @@
 .rites_part5 .rites_part5_chime_series.xuan-ready .rites_part5_chime_series_pic4[data-v-bfd0f4f0]{width:33%;bottom:calc(20% - 1.409vw)}
 .xuan-ready .rites_part5_chime_series_text{filter:saturate(.55)}
 .xuan-ready .rites_part5_chime_series_text.xuan-selected{filter:brightness(1.13) saturate(1)}
+.part5-scroll #rites_part5_video:not(.video-frame-ready){visibility:hidden}

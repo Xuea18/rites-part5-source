@@ -63,6 +63,10 @@ function Part5() {
  const root=useRef(null);
  useEffect(()=>{
   const host=root.current,video=host.querySelector('video');
+  const connection=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
+  const constrained=matchMedia('(max-width: 767px)').matches||connection?.saveData||/2g/.test(connection?.effectiveType||'');
+  if(constrained)video.querySelector('source').src=`${import.meta.env.BASE_URL}assets/rites5/rites_part5_video-mobile.mp4`;
+  video.preload='none';video.controls=false;video.playsInline=true;video.muted=true;video.disablePictureInPicture=true;video.tabIndex=-1;video.style.pointerEvents='none';video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');video.setAttribute('disablepictureinpicture','');
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   const resize=()=>{
    document.documentElement.style.fontSize=`${innerWidth/25.6}px`;
@@ -74,8 +78,9 @@ function Part5() {
   const smoother=ScrollSmoother.create({wrapper:host.querySelector('.smooth-wrapper'),content:host.querySelector('.smooth-content'),smooth:reduced.matches?0:2,effects:true,normalizeScroll:true});
   // Standalone entry opens on the first fully revealed frame, without the preceding chapter.
   if(scrollY===0)smoother.scrollTop(2/52.5*(host.querySelector('.smooth-content').offsetHeight-innerHeight));
-  let frame,disposed=false;
+  let frame,disposed=false,videoRequested=false;
   const series=host.querySelector('.rites_part5_chime_series');
+  series.inert=true;
   const controls=[...host.querySelectorAll('.rites_part5_chime_series_text_light')];
   const dots=[1,2,3].map(i=>host.querySelector('.rites_part5_dot'+i));
   const activate=(element,label,handler)=>{
@@ -101,6 +106,9 @@ function Part5() {
    const length=host.querySelector('.smooth-content').offsetHeight-innerHeight;
    const time=Math.max(0,Math.min(52.5,current/length*52.5));
    timeline.time(time,false);
+   // Keep the 40 MB film off the initial network queue. The long-scroll lead-in
+   // gives it time to buffer before the film segment is revealed.
+   if(time>=34&&!videoRequested){videoRequested=true;video.preload='auto';video.load();}
    // Reconcile seeks skipped while the video decoder was busy.
    if(video.readyState>=1&&!video.seeking){const wanted=Math.max(0,Math.min(29,(time-37.5)/15*29));if(Math.abs(video.currentTime-wanted)>.035)video.currentTime=wanted;}
    const visible=getComputedStyle(series).display!=='none'&&+getComputedStyle(series).opacity>.05;
@@ -109,17 +117,18 @@ function Part5() {
    host.dataset.time=time.toFixed(4);
    frame=requestAnimationFrame(tick);
   };
-  video.muted=true;
+  const revealVideo=()=>video.classList.add('video-frame-ready');
+  video.addEventListener('seeked',revealVideo);
   video.addEventListener('error',()=>{host.dataset.mediaError='true';},{once:true});
   frame=requestAnimationFrame(tick);
   addEventListener('resize',resize);
   let cleanB;installEnhancedMouse(host).then(clean=>{if(disposed)clean();else cleanB=clean;}).catch(console.error);
   const cleanRack=installRackGlissando(host);
-  return()=>{disposed=true;cleanRack();cleanB?.();cancelAnimationFrame(frame);jump?.kill();cleanups.forEach(f=>f());removeEventListener('resize',resize);smoother.kill();ctx.revert();};
+  return()=>{disposed=true;cleanRack();cleanB?.();cancelAnimationFrame(frame);jump?.kill();cleanups.forEach(f=>f());video.removeEventListener('seeked',revealVideo);removeEventListener('resize',resize);smoother.kill();ctx.revert();};
  },[]);
  return <main ref={root} className="part5-scroll" aria-label="礼乐之邦：编钟与乐悬制度">
   <div className="smooth-wrapper"><div className="smooth-content" /></div>
-  <div className="part5-viewport" dangerouslySetInnerHTML={{__html:originalMarkup.replaceAll('/assets/',`${import.meta.env.BASE_URL}assets/`)}} />
+  <div className="part5-viewport" dangerouslySetInnerHTML={{__html:originalMarkup.replaceAll('/assets/',`${import.meta.env.BASE_URL}assets/`).replace('rites_part5_video.mp4','rites_part5_video-lite.mp4').replace('preload="auto" playsinline=""','preload="none" playsinline="" webkit-playsinline="" disablepictureinpicture=""')}} />
   <OriginalNav />
   <p className="media-error" role="status">编钟影像加载失败，请刷新页面重试。</p>
  </main>;

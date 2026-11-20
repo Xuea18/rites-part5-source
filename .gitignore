@@ -4,3 +4,6 @@ dist/
 *.log
 verification*.png
 verification*.json
+docs/original-assets/
+docs/xuan-media/*compare.png
+docs/xuan-media/optimized-mobile.png
